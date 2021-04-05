@@ -1,0 +1,98 @@
+.slider {
+  background-color: #eeeeee;
+  &__wrapper {
+    position: relative;
+    padding: 0 20px;
+  }
+  &__input {
+    position: absolute;
+    opacity: 0;
+    &--first:checked~.slider__btn label[for="slider-first"],
+    &--second:checked~.slider__btn label[for="slider-second"],
+    &--third:checked~.slider__btn label[for="slider-third"] {
+      background: #c1c1c1;
+    }
+    &--first:checked~.slider__items .slider__item:nth-child(1),
+    &--second:checked~.slider__items .slider__item:nth-child(2),
+    &--third:checked~.slider__items .slider__item:nth-child(3) {
+      display: block;
+    }
+  }
+  &__btn {
+    position: absolute;
+    bottom: 95px;
+    left: 50%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+  }
+  &__label {
+    box-sizing: content-box;
+    width: 9px;
+    height: 9px;
+    margin: 0 6px;
+    background: #ffffff;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &__item {
+    display: none;
+    overflow: hidden;
+    &:nth-child(1) {
+      background-image: url(../images/content/nerds-index-slide1.png);
+      background-repeat: no-repeat;
+      background-position: 99% -8px;
+    }
+    &:nth-child(2) {
+      background-image: url(../images/content/nerds-index-slide2.png);
+      background-repeat: no-repeat;
+      background-position: 99% 0;
+    }
+    &:nth-child(3) {
+      background-image: url(../images/content/nerds-index-slide3.png);
+      background-repeat: no-repeat;
+      background-position: 99% 0;
+    }
+  }
+  &__content {
+    width: 520px;
+    margin-top: 71px;
+    margin-bottom: 80px;
+  }
+  &__title {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  &__text {
+    width: 415px;
+    margin-bottom: 40px;
+  }
+  &__link {
+    display: block;
+    width: 240px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    background-color: #fb565a;
+    border-radius: 3px;
+    &:hover {
+      background-color: #e74246;
+    }
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #d7373b;
+      box-shadow: inset 0px 3px 0px 0px #c13135;
+    }
+  }
+}

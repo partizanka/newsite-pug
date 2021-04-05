@@ -1,0 +1,21 @@
+.main-footer {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    width: 1160px;
+    margin: 70px auto;
+    padding: 0 20px;
+  }
+  &__discount {
+    padding-top: 5px;
+  }
+  &__discount b {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+  &__discount p {
+    margin: 7px 0 20px;
+    color: #444444;
+  }
+}

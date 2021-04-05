@@ -1,0 +1,70 @@
+.advantages {
+  display: flex;
+  margin: 80px 0;
+  padding: 0 20px;
+  &__item {
+    width: 300px;
+    margin: 0 100px 0 0;
+  }
+  &__image {
+    margin: 0 0 17px 0;
+    background-color: #e5e5e5;
+  }
+  &__title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__text {
+    width: 260px;
+    margin: 15px 0 33px;
+  }
+  &__link {
+    display: block;
+    width: 160px;
+    padding: 16px 0;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 3px;
+    &--sites {
+      background-color: #fb565a;
+      &:hover {
+        background-color: #e74246;
+      }
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+        background-color: #d7373b;
+        box-shadow: inset 0px 3px 0px 0px #c13135;
+      }
+    }
+    &--apps {
+      background-color: #00ca74;
+      &:hover {
+        background-color: #00bc6c;
+      }
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+        background-color: #00aa62;
+        box-shadow: inset 0px 3px 0px 0px #009958;
+      }
+    }
+    &--presentations {
+      background-color: #efc84a;
+      &:hover {
+        background-color: #eab534;
+      }
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+        background-color: #e5a722;
+        box-shadow: inset 0px 3px 0px 0px #ce961f;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.main-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 20px 0;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 437px;
+    margin: 0 0 0 203px;
+    padding: 10px 0 0;
+    list-style: none;
+  }
+  &__item {
+    position: relative;
+  }
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000000;
+    &:hover {
+      color: #fb565a;
+    }
+    &:active {
+      color: #bdbdbd;
+    }
+  }
+}

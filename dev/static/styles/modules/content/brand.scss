@@ -1,0 +1,71 @@
+.brand {
+  margin: 0 0 80px;
+  padding: 0 20px;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__link {
+    position: relative;
+    display: block;
+    width: 260px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+    &--bordershop::before,
+    &--pink::before,
+    &--mishka::before {
+      position: absolute;
+      top: 64px;
+      left: -20px;
+      display: block;
+      content: "";
+      width: 2px;
+      height: 52px;
+      background-color: #eeeeee;
+    }
+    &--htmlacademy {
+      background-image: url(../images/content/logo-1.png);
+      background-position: center 60px;
+      &:hover {
+        background-image: url(../images/content/logo-12.png);
+      }
+      &:active {
+        background-image: url(../images/content/logo-11.png);
+      }
+    }
+    &--bordershop {
+      background-image: url(../images/content/logo-2.png);
+      &:hover {
+        background-image: url(../images/content/logo-22.png);
+      }
+      &:active {
+        background-image: url(../images/content/logo-21.png);
+      }
+    }
+    &--pink {
+      background-image: url(../images/content/logo-3.png);
+      &:hover {
+        background-image: url(../images/content/logo-32.png);
+      }
+      &:active {
+        background-image: url(../images/content/logo-31.png);
+      }
+    }
+    &--mishka {
+      background-image: url(../images/content/logo-4.png);
+      background-position: center 50px;
+      &:hover {
+        background-image: url(../images/content/logo-42.png);
+      }
+      &:active {
+        background-image: url(../images/content/logo-41.png);
+      }
+    }
+  }
+}

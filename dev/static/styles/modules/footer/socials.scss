@@ -1,0 +1,34 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  list-style: none;
+  margin-right: 140px;
+  padding: 0 0 15px;
+  &__link {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: #e1e1e1;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    &:hover {
+      background-color: #e74246;
+    }
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #d7373b;
+      box-shadow: inset 0px 3px 0px 0px #c13135;
+    }
+    &--vk {
+      background-image: url(../images/content/vk-icon.png);
+    }
+    &--fb {
+      background-image: url(../images/content/fb-icon.png);
+    }
+    &--inst {
+      background-image: url(../images/content/insta-icon.png);
+    }
+  }
+}

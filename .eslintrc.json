@@ -1,0 +1,19 @@
+{
+  "overrides": [
+    {
+      "files": [
+        "dev/static/**/*.js"
+      ],
+      "extends": [
+        "standard"
+      ], 
+       "rules": {
+        "eol-last": "off", 
+        "quotes": "off", 
+        "semi": "off", 
+        "one-var": "off", 
+        "space-before-function-paren": "off"
+     }
+    }
+  ]
+}
